@@ -1,0 +1,30 @@
+.tulisankiri{
+    color: green ;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.tulisankanan{
+    color: orangered;
+    font-size: 24px;
+    font-style: italic;
+    text-align: right;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.tulisantengah{
+    color: aqua;
+    font-style: oblique;
+    text-align: center;
+    text-transform: lowercase;
+    word-spacing: 10px;
+}
+.tulisanjustify{
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    text-align: justify;
+    word-spacing: 10px;
+}

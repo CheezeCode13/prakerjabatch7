@@ -1,0 +1,19 @@
+h1,h2{
+    text-align: center;
+}
+
+.box{
+    background: violet;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.box-2{
+    background: rgb(17, 11, 179);
+    height: 100px;
+    width: 600px;
+    margin: 70px;
+    padding-left: 70px;
+}

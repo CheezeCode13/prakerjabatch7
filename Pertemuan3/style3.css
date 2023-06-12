@@ -1,0 +1,28 @@
+body{
+    background: blueviolet;
+}
+
+.tulisan1{
+    color: green ;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.tulisan2{
+    color: orangered;
+    font-size: 24px;
+    font-style: italic;
+    text-align: right;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.tulisan3{
+    color: aqua;
+    font-style: oblique;
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration: line-through;
+    word-spacing: 10px;
+}
