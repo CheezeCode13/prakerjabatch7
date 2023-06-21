@@ -1,0 +1,19 @@
+ALGORITMA Menghitung Luas dan Keliling Lingkaran
+
+1. Tulis "Algoritma Menghitung Luas dan Keliling Lingkaran"
+
+2. Tulis "Masukkan panjang jari-jari lingkaran: "
+   simpan sebagai r
+
+3. Tulis "Masukkan panjang diameter lingkaran: "
+   simpan sebagai d
+
+4. hitung luas <- 3.14159 * r * r
+	simpan sebagai hasil luas lingkaran
+   hitung keliling <- 3.14159 * d
+	simpan sebagai hasil keliling
+
+5. tampilkan "hasil Luas lingkaran."
+   tampilkan "hasil Keliling lingkaran dengan diameter."
+
+6. Selesai
