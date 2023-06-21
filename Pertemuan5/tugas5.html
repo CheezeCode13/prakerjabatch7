@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>tugas5</title>
+</head>
+
+<body>
+    <label for="text-input">Text:</label>
+    <input id="text-input" type="text"><br>
+    <label for="number-input">Number:</label>
+    <input id="number-input" type="number"><br>
+    <button id="cetak-button">Cetak</button>
+    <ol id="result-list"></ol>
+
+    <script>
+        function cetak() {
+            var textValue = document.getElementById("text-input").value;
+            var numberValue = document.getElementById("number-input").value;
+            var resultList = document.getElementById("result-list");
+
+            resultList.innerHTML = ""; // Menghapus konten sebelumnya di dalam <ol>
+
+            for (var i = 1; i <= numberValue; i++) {
+                var listItem = document.createElement("li");
+                listItem.innerHTML = textValue + " " + i;
+                resultList.appendChild(listItem);
+            }
+        }
+
+        var cetakButton = document.getElementById("cetak-button");
+        cetakButton.addEventListener("click", cetak);
+    </script>
+</body>
+
+</html>

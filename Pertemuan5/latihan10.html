@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conditional</title>
+</head>
+<body>
+    <label>Kondisi: </label>
+    <input type="text" id="kondisi"/>
+    <button onclick="cek_kondisi()">Cek Kondisi</button>
+    <div></div>
+    <div id="hasil"></div>
+    
+    <label>grade: </label>
+    <input type="number" id="kondisi2"/>
+    <button onclick="hitung_grade()">Cek Kondisi</button>
+    <div></div>
+    <div id="hasil2"></div>
+
+    <script>
+        // =, memasukkan nilai ke variable
+        // ==, membandingkan kiri kanannya apakah sama
+        // ===, membandingkan kiri kanannya apakah sama, tipe data harus sama
+        function cek_kondisi() {
+            let kondisi = document.getElementById("kondisi").value;
+            let hasil;
+            if (kondisi === "lapar") {
+                hasil = "Waktu Makan";
+            } else if (kondisi === "kenyang") {
+                hasil = "Bukan Waktu Makan";
+            } else {
+                hasil = "Boleh Ngemil";
+            }
+            document.getElementById("hasil").innerHTML = hasil;
+        }
+
+        function hitung_grade() {
+            let kondisi2 = document.getElementById("kondisi2").value;
+            let hasil2;
+            if (kondisi2 >= 90) {
+                hasil2 = "A";
+            } else if (kondisi2 >= 80) {
+                hasil2 = "B";
+            } else if (kondisi2 >= 70) {
+                hasil2 = "C";
+            } else if (kondisi2 >= 60) {
+                hasil2 = "D";
+            } else {
+                hasil2 = "E";
+            }
+            document.getElementById("hasil2").innerHTML = hasil2;
+        }
+
+        
+    </script>
+</body>
+</html>

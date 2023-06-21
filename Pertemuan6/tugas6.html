@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas Mandiri 6</title>
+    <style>
+        .paragraf {
+            transition: color 1s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+
+    <script>
+        const paragrafs = document.querySelectorAll('.paragraf');
+        const colors = ['red', 'green', 'blue', 'yellow', 'orange'];
+        let currentIndex = 0;
+
+        function changeColor() {
+            paragrafs.forEach(paragraf => {
+                paragraf.style.color = colors[currentIndex];
+            });
+            currentIndex = (currentIndex + 1) % colors.length;
+        }
+
+        setInterval(changeColor, 1000); // Mengubah warna setiap 1 detik
+        setTimeout(() => {
+            clearInterval(changeColor); // Menghentikan animasi setelah 5 detik
+        }, 5000);
+    </script>
+
+</body>
+
+</html>
